@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menubar</title>
+</head>
+<style>
+    .container{
+        display: inline-block;
+        cursor: pointer;
+        padding-bottom: 100px;
+        margin-bottom: 200px;
+        float: left;
+        
+        
+        
+    }
+    
+    .bar1,.bar2,.bar3{
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 3px 0;
+        transition: 0.4s;
+        display: none;
+
+    }
+    @media only screen and (max-width:800px){
+    .bar1,.bar2,.bar3{
+        display: block;
+        color: whitestyle="color:white;";
+    }
+    .change .part{
+    display: block;
+    color:white ;
+    text-decoration: none;
+    padding: 10px;
+   }
+ .change .element{
+    display: block;
+    padding: 40px;
+    color: white;
+    float: left;
+    
+
+ }
+ .element{
+    display: inline-block;
+    background-color:  rgb(58, 213, 230);
+    text-decoration: none;
+    padding: 10px;
+    display: none;
+
+ }
+ 
+    }
+    .element a:hover{
+
+        color: white;
+    }
+    .main{
+        text-align: center;
+        padding: 4px;
+        color: green;
+        background-color: rgb(55, 216, 238);
+        
+        
+    }
+    .img{
+        overflow: hidden;
+        width:50% ;
+    }
+  
+    .part{
+        text-decoration: none;
+        padding: 10px;
+    }
+
+  
+  
+    .change .bar1 {
+        transform: translate(0,8.25px) rotate(-45deg);
+    }
+    .change .bar2 {
+         opacity:0;
+    }
+
+    .change .bar3 {
+        transform: translate(0,-8.25px) rotate(45deg);
+    }
+    .button{
+        background-color: aqua;
+        color: black;
+        float: right;
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .button :hover{
+        background-color: black;
+        color: white;
+    }
+    .button a{
+        background-color: aqua;
+        color: black;
+        padding: 5px;
+        text-decoration: none;
+        display: none;
+    }
+    .button a:hover{
+       
+       display: block;
+       
+    }
+
+  
+  
+    
+ 
+
+</style>
+<body background="https://www.teahub.io/photos/full/268-2680995_hd-images-of-computer-education.jpg" style="width:100%;">
+    <div class="header">
+        <div class="main"><H4>MADHYAMIK SIKHSHA KENDRA</H4></div>
+    <div class="container" onclick="myFunction(this)">
+    <div class="bar1"style="color:white;"></div>
+    <div class="bar2"style="color:white;"></div>
+    <div class="bar3"style="color:white;"></div>
+    <div class="element" style="background-color: rgb(25, 181, 232);padding:5px;" >
+    <a href=""  class="part">Home</a>
+    <a href=""  class="part">About us</a>
+    <a href="" class="part">Addmission</a>   
+    <a href="" class="part">Education</a>   
+    <a href="" class="part">others</a>   
+    <a href="" class="part">Contact Us</a>   
+    </div>
+    </div>
+    
+    <div class="button" >
+        <button > Login
+            <a href="#">Student Login</a>
+            <a href="#">Institute Login</a>
+        </button>
+    </div>
+   
+</div>
+<div class="notice">
+    
+</div>
+
+
+    
+    
+   
+   
+    <script>
+        function myFunction(x){
+            x.classList.toggle("change");
+        }
+        </script>
+    
+</body>
+</html>
